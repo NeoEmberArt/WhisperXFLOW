@@ -6,7 +6,7 @@
 
 A powerful Blender addon that integrates WhisperX for high-quality audio transcription with word-level timestamps and speaker diarization directly within Blender.
 
-![WhisperX Transcription Addon](usage/startingUI.png)
+![WhisperX Transcription Addon](usage/CHOOSEAUDIO.png)
 
 ## Features
 
