@@ -11,7 +11,7 @@ A powerful Blender addon that integrates WhisperX for high-quality audio transcr
 ## Features
 
 - 🎯 **Accurate Word-Level Timestamps**: Generate precise word-level timestamps for audio transcription
-- 👥 **Speaker Diarization**: Identify and label different speakers in your audio
+- 👥 **Speaker Diarization**: Identify and label different speakers in your audio (currently CLI ONLY)
 - 🚀 **Multiple Output Formats**: Export to NLA strips or Video Sequencer subtitles
 - 🔄 **Batch Processing**: Efficiently process audio files with batched inference
 - 🌐 **Multiple Languages**: Support for various languages through WhisperX's language models
@@ -27,6 +27,7 @@ A powerful Blender addon that integrates WhisperX for high-quality audio transcr
 - [Developer Options](#developer-options)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
+- [CLI usage for developers](#cli-workflow)
 
 ## Installation
 
@@ -60,6 +61,17 @@ torchaudio
 numpy
 pyannote.audio (for speaker diarization)
 ```
+## CLI Workflow
+
+### Basic usage
+1. **Start the Service**: open up command prompt and run the following `python path/to/WisperX_runner.py`
+2. **Load up a model**: `load-model(model_name)`
+3. **transcribe audio**: `transcribe-audio(path, Diarization=True/False)`
+4. **JSON**: The script will output all data formatted as JSON
+5. **exit**: `exit()`
+
+
+
 
 ## Usage
 
