@@ -105,17 +105,24 @@ The addon adds panels in two locations:
 
 WhisperX provides several model sizes with different capabilities and resource requirements:
 
-| Model | Size | Speed | Accuracy | Memory Required | Best For |
-|-------|------|-------|----------|----------------|----------|
-| tiny | 39 MB | Fastest | Lowest | ~1 GB | Quick drafts, short clips |
-| tiny.en | 39 MB | Fastest | Low (English only) | ~1 GB | English-only quick drafts |
-| base | 74 MB | Fast | Moderate | ~1 GB | General use, medium accuracy |
-| base.en | 74 MB | Fast | Moderate (English only) | ~1 GB | English-only general use |
-| small | 244 MB | Medium | Good | ~2 GB | Better accuracy, longer content |
-| small.en | 244 MB | Medium | Good (English only) | ~2 GB | English-only longer content |
-| medium | 769 MB | Slow | Very good | ~5 GB | High accuracy needs |
-| medium.en | 769 MB | Slow | Very good (English only) | ~5 GB | English-only high accuracy |
-| large-v3 | 1.5 GB | Slowest | Best | ~10 GB | Professional transcription |
+Model       | Size      | Speed       | Accuracy          | Memory Required (GPU/CPU RAM) | Best For
+------------|-----------|-------------|-------------------|------------------------------|------------------------------
+tiny        | ~75 MB    | Fastest     | Lowest            | ~1 GB                        | Quick drafts, short clips
+tiny.en     | ~75 MB    | Fastest     | Low (English only)| ~1 GB                        | English-only quick drafts
+base        | ~142 MB   | Fast        | Moderate          | ~1.2 GB                      | General use, medium accuracy
+base.en     | ~142 MB   | Fast        | Moderate (English)| ~1.2 GB                      | English-only general use
+small       | ~466 MB   | Medium      | Good              | ~2 GB                        | Better accuracy, longer content
+small.en    | ~466 MB   | Medium      | Good (English)    | ~2 GB                        | English-only longer content
+medium      | ~1.5 GB   | Slow        | Very good         | ~5 GB                        | High accuracy needs
+medium.en   | ~1.5 GB   | Slow        | Very good (English)| ~5 GB                       | English-only high accuracy
+large-v3    | ~2.9 GB   | Slowest     | Best              | ~10+ GB                     | Professional transcription
+
+Notes:
+- Memory required assumes GPU acceleration; CPU usage may require similar or more system RAM.
+- ".en" models are English-only and generally smaller/faster.
+- Larger models offer better accuracy but need more VRAM and processing time.
+- Model files are downloaded on first use and cached locally.
+
 
 ### Model Selection Tips
 
